@@ -1,0 +1,125 @@
+*{
+  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.changeacc{
+    width: 400px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.changeacc header {
+
+    font-size: 40px;
+    font-weight: 500px;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+.changeacc form {
+
+    margin: 35px 30px;
+}
+
+form .textarea {
+
+    align-items: center;
+    margin-bottom: 35px;
+    justify-content: space-between;
+}
+
+.textarea .textfield{
+
+    height: 40px;
+    position: relative;
+    width: 300px;
+}
+
+form .textarea input{
+
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+form .button-area{
+
+    margin: 25px 0px;
+    display : flex;
+}
+
+
+.button-area button{
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: linear-gradient(to left,rgb(247, 247, 247) 50%, rgb(255, 162, 41) 50%) right ;
+    background-size: 200% ;
+    transition-duration: .5s ;
+}
+
+.button-area button:hover{
+
+    background-position: left;
+    cursor: pointer;
+}
+
+.button-area span{
+
+    color: rgb(250, 142, 0);
+    margin: 10px;
+    display: none;
+}
+
+@media (max-width : 600px){
+
+    .changeacc header{
+
+        align-items: center;
+
+    }
+    
+    form .textarea {
+
+        flex-direction: column;
+    }
+
+    .textarea .textfield{
+
+        width: 100%;
+    }
+
+    form .button-area{
+
+        flex-direction: column;
+    }
+
+    .button-area button{
+        
+        width: 100%;
+    }
+
+    .button-area span{
+        
+        text-align: center;
+        margin: 20px 0px;
+    }
+}
