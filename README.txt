@@ -1,4 +1,4 @@
-//I made this login and signup system while im learning PHP
+//I made this login system while im learning PHP
 
 It covers :
 	-HTML
